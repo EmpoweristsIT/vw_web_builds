@@ -11,7 +11,8 @@ import { LinkModule } from "@bitwarden/components";
 @Component({
   imports: [CommonModule, JslibModule, LinkModule, RouterModule],
   template: `
-    <div class="tw-text-center vw-signup-link" *ngIf="!(isUserRegistrationDisabled$ | async)">
+    <div class="tw-text-center" *ngIf="!(isUserRegistrationDisabled$ | async)">
+      {{ "newToBitwarden" | i18n }}
       <a bitLink routerLink="/signup">{{ "createAccount" | i18n }}</a>
     </div>
   `,

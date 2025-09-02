@@ -182,7 +182,7 @@ const routes: Routes = [
         canActivate: [unauthGuardFn()],
         data: {
           pageTitle: {
-            key: "logIn",
+            key: "logInToBitwarden",
           },
           pageIcon: VaultIcon,
         } satisfies RouteDataProperties & AnonLayoutWrapperData,
